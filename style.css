@@ -1,0 +1,82 @@
+/* DESIGN SYSTEM
+
+--01--COLORS */
+
+:root {
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
+    --white: #FFFFFF;
+}
+
+/*
+--02--TYPOGRAPHY
+
+- OUTFIT BOLD: FZ: 22px, LH: 120%, LS: 0px
+- OUTFIT REGULAR: FZ: 15px, LH: 140%, LS: 0.2px
+
+--03--SPACING
+40px
+24px
+16px
+
+*/
+
+* {
+    /* Global Reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* To make default rem 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", serif;
+    background-color: var(--slate-300);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    max-width: 32rem;
+    padding: 1.6rem 1.6rem 4rem 1.6rem;
+}
+
+.qr-text-box {
+    padding: 0 1.6rem;
+}
+
+
+.qr-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2.4rem;
+}
+
+.qr-heading,
+.qr-text {
+    text-align: center;
+}
+
+.qr-heading {
+    color: var(--slate-900);
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 1.6rem;
+}
+
+.qr-text {
+    color: var(--slate-500);
+    font-size: 1.5rem;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
